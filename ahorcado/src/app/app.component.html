@@ -11,9 +11,10 @@
 </div>
 <div class="row">
   <div class="col text-center">
-    <button class="btn btn-primary">A</button>
-    <button>A</button>
-    <button>A</button>
+    <button *ngFor="let letra of letras" class="btn btn-primary">
+      {{ letra }}
+
+    </button>
   </div>
 </div>
   
