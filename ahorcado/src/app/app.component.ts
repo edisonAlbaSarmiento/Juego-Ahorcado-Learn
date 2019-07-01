@@ -47,12 +47,10 @@ export class AppComponent {
 
     if(palabraEvaluar === this.palabra) {
       this.gane = true;
-      console.log('GANO');
     } 
 
     if (this.intentos >= 9) {
       this.perdio = true;
-      console.log('Perdio');
     }
   }
 

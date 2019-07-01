@@ -9,7 +9,7 @@
     <h1>{{ palabraOculta }}</h1>
   </div>
 </div>
-<div class="row">
+<div class="row" *ngIf="!gane && !perdio">
   <div class="col text-center">
     <button (click)="comprobar(letra)" *ngFor="let letra of letras" class="btn btn-primary">
       {{ letra }}
@@ -17,4 +17,17 @@
     </button>
   </div>
 </div>
-  
+<div class="row" *ngIf="gane">
+  <div class="col text-center">
+    <h1>FELICIDADES GANASTE !!!</h1>
+    <h4> :D :D</h4>
+  </div>
+</div>
+<div class="row" *ngIf="perdio">
+  <div class="col text-center">
+    <h1>INTENTALO DE NUEVO PERDISTE</h1>
+    <h4> :C :C</h4>
+    <h4>LA PALABRA ERA {{ palabra }}</h4>
+ 
+  </div>
+</div>
