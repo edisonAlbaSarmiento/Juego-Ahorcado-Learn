@@ -30,3 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Styles
 
 https://getbootstrap.com/docs/4.3/layout/grid/
+
+## Docs
+
+https://angular.io/cli
